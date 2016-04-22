@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace TeamPowered
 {
-    class Team
+    public class Team
     {
+        private string _name;
+
+        public Team(string name)
+        {
+            this._name = name;
+        }
+
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
+        }
+
+        public string Description { get; set; }
+        public string Category { get; set; }
     }
 }
